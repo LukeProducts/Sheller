@@ -1,6 +1,6 @@
 # Sheller
 
-Windows Exploitation Tool to bypass all known Antivirus scanner including Defender, Bitdefender, Kaspersky, McAfee, NANO-Antivirus, Kingsoft, Avast, Avira and many more.
+Sheller is a Windows Exploitation Tool to bypass all known Antivirus scanner including Defender, Bitdefender, Kaspersky, McAfee, NANO-Antivirus, Kingsoft, Avast, Avira and many more.
 
 ![](https://user-images.githubusercontent.com/73026669/150165109-71b9f841-3b8e-42bd-a502-5d666244eaaf.png)
 

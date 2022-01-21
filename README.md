@@ -12,9 +12,10 @@ To see Information:
 ```python 
 python3 sheller.py
 ```
+![sheller_help](https://user-images.githubusercontent.com/73026669/150557890-cdb78323-3708-4932-8355-c98f5b05a660.jpg)
 
 ``
-python sheller.py -s xy.bat -lh lh -lp 12 -b64: 
+python sheller.py -s xy.bat -lh lh -lp 4444 -b64 -ch -v: 
 ``
 
 <a href="https://www.virustotal.com/gui/file/2fc4ec778c03a989fd74fa878617dc22e7efc35e8d906b51af611562d1b0b418?nocache=1">fully undetected AMSI Scan Results</a>

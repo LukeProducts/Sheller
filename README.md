@@ -10,9 +10,10 @@ There is a module to disable any windows defender antivirus feature if executed 
 # Getting started
 To see Information:
 ```python 
-python3 sheller.py
+
 ```
 ```
+root@lukeproducts:~/Sheller/# python3 sheller.py
 Copyright LukeProducts 2022, all rights reserved
  ┌──────────────────────────────────────┐       
  │                   ▼         ##       │       

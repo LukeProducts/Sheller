@@ -8,8 +8,6 @@ For use python3 and powershell (Windows) or pwsh (Linux) are required, the scrip
 The module sheller is to gain reverse shell to the victims device, providing several amsi bypass module such as encoding, chunking and var randomization.
 There is a module to disable any windows defender antivirus feature if executed with admin privileges too.
 # Getting started
-To see Information:
-
 ```
 root@lukeproducts:~/Sheller/# python3 sheller.py
 

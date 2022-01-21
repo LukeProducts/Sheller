@@ -66,7 +66,7 @@ Microsoft Windows [Version 10.0.19042.1415]
 D:\Victim>
 ```
 ```diff
-- gsdf
+Hello
 ```
 ### xy.bat: <a href="https://www.virustotal.com/gui/file/2fc4ec778c03a989fd74fa878617dc22e7efc35e8d906b51af611562d1b0b418?nocache=1">fully undetected AMSI Scan Result</a>
 ```

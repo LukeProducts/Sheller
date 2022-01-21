@@ -9,7 +9,7 @@ The module sheller is to gain reverse shell to the victims device, providing sev
 There is a module to disable any windows defender antivirus feature if executed with admin privileges too.
 # Getting started
 ```
-root@lukeproducts:~/Sheller/# python3 sheller.py
+root@lukeproducts:~/Sheller# python3 sheller.py
 
 Copyright LukeProducts 2022, all rights reserved
  ┌──────────────────────────────────────┐       

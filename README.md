@@ -22,21 +22,30 @@ Copyright LukeProducts 2022, all rights reserved
  └──────────────────────────────────────┘       
 
 
-usage: sheller2.0.py [-h] [-s SHELLOUTNAME] [-avkill ANTIVIRUSKILL] [-lh LOCALHOST] [-lp LOCALPORT] [-b64] [-ch] [-v]
+usage: a.py [-h] [-s SHELLOUTNAME] [-avkill ANTIVIRUSKILL] [-lh LOCALHOST] [-ph PAYLOADHOST] [-pp PAYLOADPORT]
+            [-lstp LISTENPORT] [-lp LOCALPORT] [-b64] [-ch] [-v]
 
 optional arguments:
   -h, --help            show this help message and exit
   -s SHELLOUTNAME, --shelloutname SHELLOUTNAME
                         Reverse Shell. Value: fileoutputname. Requires: [-lh] [-lp], optional: [-b64] [-ch] [-v]
   -avkill ANTIVIRUSKILL, --antiviruskill ANTIVIRUSKILL
-                        script to deactivate AV of victim if executed with admin privileges. Optional flag: [-b64] [-ch]
+                        script to deactivate AV of victim if executed with admin privileges. Optional flag: [-b64]
+                        [-ch]
   -lh LOCALHOST, --localhost LOCALHOST
                         host for payload ("lh" for automatically assign host to this systems address)
+  -ph PAYLOADHOST, --payloadhost PAYLOADHOST
+                        host to connect to
+  -pp PAYLOADPORT, --payloadport PAYLOADPORT
+                        port to to connect to
+  -lstp LISTENPORT, --listenport LISTENPORT
+                        port to listen on with netcat
   -lp LOCALPORT, --localport LOCALPORT
                         port for payload (4 digit number recommended)
   -b64                  encodes payload to base64
   -ch                   chunks up base64 encoded string (chunking probability in CHUNK_PROBABILITY)
-  -v, --varencode       changes all variables names to an random 10 hex digit encoded into VAR_ENCODING encoding type (default is md5)
+  -v, --varencode       changes all variables names to an random 10 hex digit encoded into VAR_ENCODING encoding
+                        type (default is md5)
   ```
 
 

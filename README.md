@@ -72,7 +72,7 @@ powershell /w 1 /C "$a=[scriptblock]::create([Text.Encoding]::Unicode.GetString(
 ```
 [![](https://user-images.githubusercontent.com/73026669/150165109-71b9f841-3b8e-42bd-a502-5d666244eaaf.png)](https://www.virustotal.com/gui/file/2fc4ec778c03a989fd74fa878617dc22e7efc35e8d906b51af611562d1b0b418?nocache=1)
 # error sources
-If you use Windows to run this script, make sure to turn off Defenders RealTimeProtection for this script, because this causes program truncations multiple times. The reason for that is, that AMSI Flaggs sheller in runtime.
+If you use Windows to run this script, make sure to turn off Defenders RealTimeProtection for this script, because this causes program truncations multiple times. The reason for that is that AMSI flaggs sheller at runtime.
 
 
 [![Build Status](https://user-images.githubusercontent.com/73026669/110617122-9c75ad00-8195-11eb-9ba5-422356072776.png)](https://github.com/LukeProducts)

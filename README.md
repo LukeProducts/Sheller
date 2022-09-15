@@ -64,7 +64,7 @@ Copyright LukeProducts 2022, all rights reserved
  └──────────────────────────────────────┘       
 
 
-Host set to "LukeProuctsKali" (192.168.0.129)
+Host set to "LukeProductsKali" (192.168.0.129)
 
 [*] Successfully exported payload to "xy.bat" with encoding base64 and chunked up 87 times!
 listening on [any] 4444 ...

